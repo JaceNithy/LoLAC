@@ -1,0 +1,7 @@
+C:\Users\Tulio\Desktop\Lol\PVPNetConnect-master\bin\Debug\PVPNetConnect.XML
+C:\Users\Tulio\Desktop\Lol\PVPNetConnect-master\bin\Debug\PVPNetConnect.dll
+C:\Users\Tulio\Desktop\Lol\PVPNetConnect-master\bin\Debug\PVPNetConnect.pdb
+C:\Users\Tulio\Desktop\Lol\PVPNetConnect-master\obj\Debug\PVPNetConnect.csprojAssemblyReference.cache
+C:\Users\Tulio\Desktop\Lol\PVPNetConnect-master\obj\Debug\PVPNetConnect.csproj.CoreCompileInputs.cache
+C:\Users\Tulio\Desktop\Lol\PVPNetConnect-master\obj\Debug\PVPNetConnect.dll
+C:\Users\Tulio\Desktop\Lol\PVPNetConnect-master\obj\Debug\PVPNetConnect.pdb

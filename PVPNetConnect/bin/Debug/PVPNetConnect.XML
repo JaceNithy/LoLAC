@@ -1,0 +1,4146 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PVPNetConnect</name>
+    </assembly>
+    <members>
+        <member name="T:PVPNetConnect.ArrayCollection">
+            <summary>
+            The Array collection clas.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.ArrayCollection.#ctor(System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.ArrayCollection"/> class.
+            </summary>
+            <param name="items">The items.</param>
+        </member>
+        <member name="F:PVPNetConnect.ArrayCollection.Items">
+            <summary>
+            The items in collection.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.Assets.CallbackData">
+            <summary>
+            The CallbackData class, with information for a callback.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.Assets.CallbackData.callback">
+            <summary>
+            The callback data.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.Assets.CallbackData.messageBody">
+            <summary>
+            The typed object data.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.Assets.CallbackData.#ctor(PVPNetConnect.RiotObjects.RiotGamesObject,PVPNetConnect.TypedObject)">
+            <summary>
+            Constructor for CallbackData
+            </summary>
+            <param name="cb">The Callback object.</param>
+            <param name="mb">The TypedObject.</param>
+        </member>
+        <member name="T:PVPNetConnect.Assets.GameModes">
+            <summary>
+            Game Modes enumerator.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.GameModes.CLASSIC">
+            <summary>
+            CLASSIC enum
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.GameModes.DOMINION">
+            <summary>
+            DOMINION enum
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.GameModes.ARAM">
+            <summary>
+            ARAM enum
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.Assets.Seasons">
+            <summary>
+            Seasons enumerator.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.Seasons.CURRENT">
+            <summary>
+            Current Season Enum
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.Seasons.ONE">
+            <summary>
+            Season 1 Enum
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.Seasons.TWO">
+            <summary>
+            Season 2 Enum
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.Seasons.THREE">
+            <summary>
+            Season 3 Enum
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.Assets.GameTypes">
+            <summary>
+            Game types enumerator.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.GameTypes.NORMAL_GAME">
+            <summary>
+            Normal game enum.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.GameTypes.RANKED_GAME">
+            <summary>
+            Ranked game enum.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.GameTypes.MATCHED_GAME">
+            <summary>
+            Matched game enum.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.GameTypes.PRACTICE_GAME">
+            <summary>
+            Practice game enum.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.Assets.QueueTypes">
+            <summary>
+            Queue types Enumeartor.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.QueueTypes.NORMAL_5x5">
+            <summary>
+            Normal 5x5 queue enum.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.QueueTypes.RANKED_SOLO_5x5">
+            <summary>
+            Ranked Solo 5x5 queue enum.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.QueueTypes.RANKED_TEAM_5x5">
+            <summary>
+            Ranked team 5x5 queue enum.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.QueueTypes.RANKED_TEAM_3x3">
+            <summary>
+            Ranked team 3x3 queue enum.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.Assets.StringEnum">
+            <summary>
+            The StringEnum value with GetStringValue method
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.Assets.StringEnum.GetStringValue(System.Enum)">
+            <summary>
+            Gets the string value from Atrribute.
+            </summary>
+            <param name="value">Enum value.</param>
+            <returns></returns>
+        </member>
+        <member name="T:PVPNetConnect.Assets.StringValue">
+            <summary>
+            StringValue class for System.Attribute
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Assets.StringValue._value">
+            <summary>
+            The value of StringValue
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.Assets.StringValue.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.Assets.StringValue"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:PVPNetConnect.Assets.StringValue.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>
+            The stringvalue value
+            </value>
+        </member>
+        <member name="T:PVPNetConnect.ClassDefinition">
+            <summary>
+            The class definition class.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ClassDefinition.type">
+            <summary>
+            The type
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ClassDefinition.externalizable">
+            <summary>
+            The externalizable
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ClassDefinition.dynamic">
+            <summary>
+            The dynamic
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ClassDefinition.members">
+            <summary>
+            The members
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.ErrorType">
+            <summary>
+            Enum error type
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ErrorType.Password">
+            <summary>
+            The password
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ErrorType.AuthKey">
+            <summary>
+            The auth key
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ErrorType.Handshake">
+            <summary>
+            The handshake
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ErrorType.Connect">
+            <summary>
+            The connect
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ErrorType.Login">
+            <summary>
+            The login
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ErrorType.Invoke">
+            <summary>
+            The invoke
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ErrorType.Receive">
+            <summary>
+            The receive
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.ErrorType.General">
+            <summary>
+            The general
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.Error">
+            <summary>
+            Error class.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Error.Type">
+            <summary>
+            The type
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Error.Message">
+            <summary>
+            The message
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.Packet">
+            <summary>
+            The packet class.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Packet.dataBuffer">
+            <summary>
+            The data buffer
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Packet.dataPos">
+            <summary>
+            The data pos
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Packet.dataSize">
+            <summary>
+            The data size
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Packet.messageType">
+            <summary>
+            The message type
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.Packet.SetSize(System.Int32)">
+            <summary>
+            Sets the size.
+            </summary>
+            <param name="size">The size.</param>
+        </member>
+        <member name="M:PVPNetConnect.Packet.SetType(System.Int32)">
+            <summary>
+            Sets the type.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:PVPNetConnect.Packet.Add(System.Byte)">
+            <summary>
+            Adds the specified b.
+            </summary>
+            <param name="b">The b.</param>
+        </member>
+        <member name="M:PVPNetConnect.Packet.IsComplete">
+            <summary>
+            Determines whether this instance is complete.
+            </summary>
+            <returns>
+              <c>true</c> if this instance is complete; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:PVPNetConnect.Packet.GetSize">
+            <summary>
+            Gets the size.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.Packet.GetMessageType">
+            <summary>
+            Gets the type of the message.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.Packet.GetData">
+            <summary>
+            Gets the data.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PVPNetConnect.Region">
+            <summary>
+            Region Enum
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.NA">
+            <summary>
+            North America
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.EUW">
+            <summary>
+            Europe West
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.EUN">
+            <summary>
+            Europe Nordic East
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.KR">
+            <summary>
+            South Korea
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.BR">
+            <summary>
+            Brazil
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.TR">
+            <summary>
+            The TR
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.PBE">
+            <summary>
+            Public Test Environment
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.SG">
+            <summary>
+            The SG
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.MY">
+            <summary>
+            The MY
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.SGMY">
+            <summary>
+            The SGMY
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.TW">
+            <summary>
+            Taiwan
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.TH">
+            <summary>
+            The TH
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.PH">
+            <summary>
+            Phillipines
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.Region.VN">
+            <summary>
+            Vietnam
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.PVPNetConnection">
+            <summary>
+            PVPNetConnection class, main class used to connect to Riot Servers and perform calls and receive data.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.isConnected">
+            <summary>
+            The boolean check for connection being active.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.client">
+            <summary>
+            The client
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.sslStream">
+            <summary>
+            The SSL stream
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.ipAddress">
+            <summary>
+            The ip address
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.authToken">
+            <summary>
+            The auth token
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.accountID">
+            <summary>
+            The account ID
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.sessionToken">
+            <summary>
+            The session token
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.DSId">
+            <summary>
+            The DS id
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.user">
+            <summary>
+            The user
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.password">
+            <summary>
+            The password
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.server">
+            <summary>
+            The server
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.loginQueue">
+            <summary>
+            The login queue
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.locale">
+            <summary>
+            The locale
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.clientVersion">
+            <summary>
+            The client version
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.useGarena">
+            <summary>
+            The use garena
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.garenaToken">
+            <summary>
+            The garena token
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.userID">
+            <summary>
+            The user ID
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.rand">
+            <summary>
+            The rand
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.serializer">
+            <summary>
+            The serializer
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.invokeID">
+            <summary>
+            The invoke ID
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.pendingInvokes">
+            <summary>
+            The pending invokes
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.results">
+            <summary>
+            The results
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.callbacks">
+            <summary>
+            The callbacks
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.decodeThread">
+            <summary>
+            The decode thread
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.heartbeatCount">
+            <summary>
+            The heartbeat count
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.PVPNetConnection.heartbeatThread">
+            <summary>
+            The heartbeat thread
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.PVPNetConnection.OnConnectHandler">
+            <summary>
+            Handler to call when [on connect].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="E:PVPNetConnect.PVPNetConnection.OnConnect">
+            <summary>
+            Occurs when [on connect].
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.PVPNetConnection.OnLoginQueueUpdateHandler">
+            <summary>
+            Handler to call when [on login queue update].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="positionInLine">The position in line.</param>
+        </member>
+        <member name="E:PVPNetConnect.PVPNetConnection.OnLoginQueueUpdate">
+            <summary>
+            Occurs when [on login queue update].
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.PVPNetConnection.OnLoginHandler">
+            <summary>
+            Handler to call when [on login].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="username">The username.</param>
+            <param name="ipAddress">The ip address.</param>
+        </member>
+        <member name="E:PVPNetConnect.PVPNetConnection.OnLogin">
+            <summary>
+            Occurs when [on login].
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.PVPNetConnection.OnDisconnectHandler">
+            <summary>
+            Handler to call when [on disconnect].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="E:PVPNetConnect.PVPNetConnection.OnDisconnect">
+            <summary>
+            Occurs when [on disconnect].
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.PVPNetConnection.OnErrorHandler">
+            <summary>
+            Handler to call when [on error].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="error">The error.</param>
+        </member>
+        <member name="E:PVPNetConnect.PVPNetConnection.OnError">
+            <summary>
+            Occurs when [on error].
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Connect(System.String,System.String,PVPNetConnect.Region,System.String)">
+            <summary>
+            Connects the specified user.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="password">The password.</param>
+            <param name="region">The region.</param>
+            <param name="clientVersion">The client version.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.AcceptAllCertificates(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+            <summary>
+            Accepts all certificates.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="certificate">The certificate.</param>
+            <param name="chain">The chain.</param>
+            <param name="sslPolicyErrors">The SSL policy errors.</param>
+            <returns>Returns true, meaning all certificates accepted.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetGarenaToken">
+            <summary>
+            Gets the garena token.
+            </summary>
+            <returns>Returns true if successful, false if not.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetAuthKey">
+            <summary>
+            Gets the auth key.
+            </summary>
+            <returns>Returns true if successful, false if not.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.HexToInt(System.String)">
+            <summary>
+            Hexes to int.
+            </summary>
+            <param name="hex">The hex number.</param>
+            <returns>Returns the integer converted from hex number.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetIpAddress">
+            <summary>
+            Gets the ip address.
+            </summary>
+            <returns>Returns true if successful, false if not.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Handshake">
+            <summary>
+            Handshakes this instance.
+            </summary>
+            <returns>Returns true if successful, false if not.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.SendConnect">
+            <summary>
+            Sends the connection info to server.
+            </summary>
+            <returns>Returns true if successful, false if not.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Login">
+            <summary>
+            Begins login process to server.
+            </summary>
+            <returns>Returns true if successful, false if not.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetErrorMessage(PVPNetConnect.TypedObject)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns>Returns the error message.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.StartHeartbeat(System.Object)">
+            <summary>
+            Starts the heartbeat, and contiuously performs the heartbeat.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Disconnect">
+            <summary>
+            Disconnects this instance from server.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Error(System.String,PVPNetConnect.ErrorType)">
+            <summary>
+            Formats the error message and shows it.
+            </summary>
+            <param name="message">The error message.</param>
+            <param name="type">The error type.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Invoke(PVPNetConnect.TypedObject)">
+            <summary>
+            Invokes the specified packet.
+            </summary>
+            <param name="packet">The packet.</param>
+            <returns>Returns the invoke id.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Invoke(System.String,System.Object,System.Object)">
+            <summary>
+            Invokes the specified destination, operation, and body by wrapping it into a packet and calling Invoke(packet).
+            </summary>
+            <param name="destination">The destination.</param>
+            <param name="operation">The operation.</param>
+            <param name="body">The body.</param>
+            <returns>Returns the invoke id.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.InvokeWithCallback(System.String,System.Object,System.Object,PVPNetConnect.RiotObjects.RiotGamesObject)">
+            <summary>
+            Invokes specified destination, operation, and body with a callback, by adding the callback to a list and calling Invoke(dest, opr, body) method.
+            </summary>
+            <param name="destination">The destination.</param>
+            <param name="operation">The operation.</param>
+            <param name="body">The body.</param>
+            <param name="cb">The cb.</param>
+            <returns>Invoke ID</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.WrapBody(System.Object,System.String,System.Object)">
+            <summary>
+            Wraps the body, destination and operation into a packet form.
+            </summary>
+            <param name="body">The body.</param>
+            <param name="destination">The destination.</param>
+            <param name="operation">The operation.</param>
+            <returns>A TypedObject class which is packet form recognizable by server.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.NextInvokeID">
+            <summary>
+            Increments to the next invoke id.
+            </summary>
+            <returns>Returns the invoke id.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.BeginReceive(System.Object)">
+            <summary>
+            Begins the receive polling to receive packets from server.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetResult(System.Int32)">
+            <summary>
+            Gets the result from the server based on specifed invoke ID.
+            </summary>
+            <param name="id">The invoke id.</param>
+            <returns>The TypedObject class which is of packet form.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.PeekResult(System.Int32)">
+            <summary>
+            Peeks the result from the server based on specified invoke ID.
+            </summary>
+            <param name="id">The invoke id.</param>
+            <returns>The TypedObject class which is of packet form.</returns>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Join">
+            <summary>
+            Joins the pendingInvokes.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Join(System.Int32)">
+            <summary>
+            Joins the pending invokes based on specified invoke id.
+            </summary>
+            <param name="id">The invoke id.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.Cancel(System.Int32)">
+            <summary>
+            Cancels the pending invoke based on specified invoke id.
+            </summary>
+            <param name="id">The invoke id.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetLoginDataPacketForUser(PVPNetConnect.RiotObjects.Client.LoginDataPacket.Callback)">
+            <summary>
+            Gets the login data packet for user.
+            </summary>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetAllMyLeagues(PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.Callback)">
+            <summary>
+            Gets all the leagues for logged in summoner.
+            </summary>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetAllLeaguesForPlayer(System.Int32,PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.Callback)">
+            <summary>
+            Get all the leagues for specified summoner ID.
+            </summary>
+            <param name="summonerID">The summoner ID.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetChallengerLeague(PVPNetConnect.Assets.QueueTypes,PVPNetConnect.RiotObjects.Leagues.League.Callback)">
+            <summary>
+            Get the challenger league for specified queue type.
+            </summary>
+            <param name="queueType">The queue type enum.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetAllPublicSummonerDataByAccount(System.Int32,PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.Callback)">
+            <summary>
+            Gets all public summoner data by account ID.
+            </summary>
+            <param name="accountID">The account ID.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetAllSummonerDataByAccount(System.Int32,PVPNetConnect.RiotObjects.Summoner.AllSummonerData.Callback)">
+            <summary>
+            Gets all summoner data by account ID, usually only works for logged in user.
+            </summary>
+            <param name="accountID">The account ID.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetSummonerByName(System.String,PVPNetConnect.RiotObjects.Summoner.PublicSummoner.Callback)">
+            <summary>
+            Gets the public summoner information by name.
+            </summary>
+            <param name="summonerName">Name of the summoner.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetSummonerNames(System.Object[],PVPNetConnect.RiotObjects.Summoner.SummonerNames.Callback)">
+            <summary>
+            Gets all the summoner names by list of summoner IDs.
+            </summary>
+            <param name="summonerIDs">The summoner IDs.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetRecentGames(System.Int32,PVPNetConnect.RiotObjects.Statistics.RecentGames.Callback)">
+            <summary>
+            Gets the recent games of summoner by account ID.
+            </summary>
+            <param name="accountID">The account ID.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.RetrievePlayerStatsByAccountId(System.Int32,PVPNetConnect.Assets.Seasons,PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.Callback)">
+            <summary>
+            Retrieves the player/summoner stats by account id (includes queue type stats and lifetime stats).
+            </summary>
+            <param name="accountID">The account ID.</param>
+            <param name="season">The season enum.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetAggregatedStats(System.Int32,PVPNetConnect.Assets.GameModes,PVPNetConnect.Assets.Seasons,PVPNetConnect.RiotObjects.Statistics.AggregatedStats.Callback)">
+            <summary>
+            Gets the aggregated stats of the summoner.
+            </summary>
+            <param name="accountID">The account ID.</param>
+            <param name="gameMode">The game mode enum.</param>
+            <param name="season">The season enum.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.RetrieveInProgressSpectatorGameInfo(System.String,PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.Callback)">
+            <summary>
+            Retrieves the in progress spectator game info by summoner name in game.
+            </summary>
+            <param name="summonerName">Name of the summoner.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetMasteryBook(System.Int32,PVPNetConnect.RiotObjects.Summoner.MasteryBook.Callback)">
+            <summary>
+            Gets the mastery book for summoner by summoner ID.
+            </summary>
+            <param name="summonerID">The summoner ID.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetSpellBook(System.Int32,PVPNetConnect.RiotObjects.Summoner.SpellBook.Callback)">
+            <summary>
+            Gets the rune/spell book for summoner by summoner ID.
+            </summary>
+            <param name="summonerID">The summoner ID.</param>
+            <param name="callback">The callback method .</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.RetrieveTopPlayedChampions(System.Int32,PVPNetConnect.Assets.GameModes,PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions.Callback)">
+            <summary>
+            Retrieves the top played champions of summoner by account ID.
+            </summary>
+            <param name="accountID">The account ID.</param>
+            <param name="gameMode">The game mode enum.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetSummonerChatIdByName(System.String,PVPNetConnect.RiotObjects.UnclassedObject.Callback)">
+            <summary>
+            Gets the name of the summoner chat id by.
+            </summary>
+            <param name="summonerName">Name of the summoner.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.GetSummonerSummaryByChatId(System.String,PVPNetConnect.RiotObjects.UnclassedObject.Callback)">
+            <summary>
+            Gets the summoner summary by chat id.
+            </summary>
+            <param name="summonerChatId">The summoner chat id.</param>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.PVPNetConnection.IsConnected">
+            <summary>
+            Determines whether this instance is connected to server.
+            </summary>
+            <returns>
+              <c>true</c> if this instance is connected; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Catalog.Talent">
+            <summary>
+            The class that defines talent.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Catalog.Talent.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Catalog.Talent"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.GameCode">
+            <summary>
+            Game Code ID number of talent.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.TalentID">
+            <summary>
+            Talent ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.TalentRowID">
+            <summary>
+            The talent row ID number, in talent tree.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.TalentGroupID">
+            <summary>
+            The talent group ID number, group in talent tree.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.PreReqTalentGameCode">
+            <summary>
+            Has to do with in game code (Unknown type, so set to string)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.Index">
+            <summary>
+            Index?? (unknown significance)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.MinLevel">
+            <summary>
+            Minimum level of talent.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.MinTier">
+            <summary>
+            Minimum tier of talent.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.MaxRank">
+            <summary>
+            Maximum rank of talent.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.TalentName">
+            <summary>
+            The talent name.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.Level1Desc">
+            <summary>
+            Level 1 of Talent description string.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.Level2Desc">
+            <summary>
+            Level 2 of Talent description string.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.Level3Desc">
+            <summary>
+            Level 31 of Talent description string.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.Level4Desc">
+            <summary>
+            Level 4 of Talent description string.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Talent.Level5Desc">
+            <summary>
+            Level 5 of Talent description string.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Catalog.TalentRow">
+            <summary>
+            Class that defines a specific TalentRow
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Catalog.TalentRow.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Catalog.TalentRow"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentRow.Index">
+            <summary>
+            Index of talent group.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentRow.TalentList">
+            <summary>
+            List of talent rows.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentRow.TalentGroupID">
+            <summary>
+            Talent Group ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentRow.PointsToActivate">
+            <summary>
+            Points to activate the talent row.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentRow.TalentRowID">
+            <summary>
+            Talent Row ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Catalog.TalentGroup">
+            <summary>
+            Class that defines a specific TalentGroup
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Catalog.TalentGroup.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Catalog.TalentGroup"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentGroup.Index">
+            <summary>
+            Index of talent group.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentGroup.TalentRowList">
+            <summary>
+            List of talent rows.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentGroup.TalentGroupName">
+            <summary>
+            Talent group name.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.TalentGroup.TalentGroupID">
+            <summary>
+            Talent Group ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Catalog.Effect">
+            <summary>
+            Class that defines Rune/Mastery effects in game.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Catalog.Effect.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Catalog.Effect"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Effect.EffectId">
+            <summary>
+            ID number of effect.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Effect.GameCode">
+            <summary>
+            The LOL game code of the effect.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Effect.Name">
+            <summary>
+            The name of the effect.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Effect.CategoryId">
+            <summary>
+            Value of the item effect (set to null?).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Effect.RuneType">
+            <summary>
+            The type of the rune.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Catalog.ItemEffect">
+            <summary>
+            Class that defines the item effect in game.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Catalog.ItemEffect.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Catalog.ItemEffect"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.ItemEffect.EffectId">
+            <summary>
+            ID number of effect.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.ItemEffect.ItemEffectId">
+            <summary>
+            ID number of item effect.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.ItemEffect.Effect">
+            <summary>
+            Class with effect information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.ItemEffect.Value">
+            <summary>
+            Value of the item effect.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.ItemEffect.ItemId">
+            <summary>
+            ID number of the item.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Catalog.Rune">
+            <summary>
+            Class that defines a specific Rune and its information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Catalog.Rune.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Catalog.Rune"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.ImagePath">
+            <summary>
+            String to image path (usually set to null).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.ToolTip">
+            <summary>
+            Tool tip for rune (usually set to null).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.Tier">
+            <summary>
+            Tier of rune (1, 2, or 3).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.ItemID">
+            <summary>
+            Item ID of the rune.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.RuneType">
+            <summary>
+            Class that specifies the rune type.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.Duration">
+            <summary>
+            Duration of rune (probably only affected for temporary runes).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.GameCode">
+            <summary>
+            Game code of the rune (game client code).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.ItemEffects">
+            <summary>
+            List of Item Effects.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.BaseType">
+            <summary>
+            Type of this object (set to "RUNE" in this class.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.Description">
+            <summary>
+            Description of the rune.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.Name">
+            <summary>
+            Name of the rune.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.Rune.Uses">
+            <summary>
+            Unknown significance (set to null).
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Catalog.RuneType">
+            <summary>
+            Class that defines a specific rune type and its infromation.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Catalog.RuneType.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Catalog.RuneType"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.RuneType.RuneTypeID">
+            <summary>
+            ID number of rune type.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.RuneType.Name">
+            <summary>
+            Name of rune type.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Catalog.RuneSlot">
+            <summary>
+            Class that defines a specific rune slot and its infromation.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Catalog.RuneSlot.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Catalog.RuneSlot"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.RuneSlot.RuneSlotID">
+            <summary>
+            ID number of rune slot.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.RuneSlot.MinLevel">
+            <summary>
+            Minimum level required for rune slot.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Catalog.RuneSlot.RuneType">
+            <summary>
+            Class that describes this slot's rune type.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Client.LoginDataPacket">
+            <summary>
+            Class that defines the login data packet.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Client.LoginDataPacket.#ctor(PVPNetConnect.RiotObjects.Client.LoginDataPacket.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Client.LoginDataPacket"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Client.LoginDataPacket.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Client.LoginDataPacket"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Client.LoginDataPacket.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Client.LoginDataPacket.callback">
+            <summary>
+            The callback method.
+            </summary>
+            
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Client.LoginDataPacket.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+            
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.PlayerStatSummaries">
+            <summary>
+            PlayerStat summaries
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.MinutesUntilShutdown">
+            <summary>
+            Minutes until shut down.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.Minor">
+            <summary>
+            Minor
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.MaxPracticeGameSize">
+            <summary>
+            Max practice game size.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.SummonerCatalog">
+            <summary>
+            Summoner Catalog.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.IPBalance">
+            <summary>
+            IP Balance
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.ReconnectInfo">
+            <summary>
+            Reconnection info to reconnect to game.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Client.LoginDataPacket.Languages">
+            <summary>
+            Languages
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.AllSummonerData">
+            <summary>
+            Allsummonerdata class with most summoner dta
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.CustomMinutesLeftToday">
+            <summary>
+            Custom minutes left today for credit.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.CoOpVsAiMunitesLeftToday">
+            <summary>
+            CoOp minutes left today for credit.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.BingeData">
+            <summary>
+            Binge Data
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.InGhostGame">
+            <summary>
+            In Ghost game? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.LeaverPenaltyLevel">
+            <summary>
+            Leaver penalty level.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.BingePreventionSystemEnabledForClient">
+            <summary>
+            Binge Prevention System Enabled For Client
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.PendingBadges">
+            <summary>
+            Pending Badges
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.BroadcastNotification">
+            <summary>
+            Broadcast notification
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.MinutesUntilMidnight">
+            <summary>
+            Minutes until midnight
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.MinutesUntilFirstWinOfDay">
+            <summary>
+            Minutes until first win of day available.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.CoOpVsAiMsecsUntilReset">
+            <summary>
+            Minutes until CoOpvsAi resets.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.ClientSystemStates">
+            <summary>
+            Client system states.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.BingeMinutesRemaining">
+            <summary>
+            Binge Minutes remaining.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.PendingKudosDTO">
+            <summary>
+            Pending kudos DTO.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.LeaverBusterPenaltyTime">
+            <summary>
+            Leaver buster penalty time.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.PlatformId">
+            <summary>
+            Platform ID
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.MatchMakingEnabled">
+            <summary>
+            Is MatchMaking Enabled? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.MinutesUntilShutdownEnabled">
+            <summary>
+            Minutes until shut down enabled.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.RpBalance">
+            <summary>
+            RP balance.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.GameTypeConfigs">
+            <summary>
+            Game type configs
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.BingeIsPlayerInBingePreventionWindow">
+            <summary>
+            binge Is Player In Binge Prevention Window
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.MinorShutdownEnforced">
+            <summary>
+            Minor shutdown enforced
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.CompetitiveRegion">
+            <summary>
+            Competitive region
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Client.LoginDataPacket.CustomMsecsUntilReset">
+            <summary>
+            Custom mseconds until reset
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.BannedChampion">
+            <summary>
+            Class with banned champion information at specific ban turn.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.BannedChampion.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.BannedChampion"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.BannedChampion.PickTurn">
+            <summary>
+            Order of ban, pick turn
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.BannedChampion.ChampionID">
+            <summary>
+            Banned champion ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.BannedChampion.TeamID">
+            <summary>
+            Id of Team (100 = 1, 200 = 2)
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.GameTypeConfig">
+            <summary>
+            Class which defines a Game type config object.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.GameTypeConfig.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.GameTypeConfig"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.ID">
+            <summary>
+            Game type config ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.AllowTrades">
+            <summary>
+            Allow trades? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.Name">
+            <summary>
+            Game type config name.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.MainPickTimerDuration">
+            <summary>
+            Duration in seconds of main pick timer.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.ExclusivePick">
+            <summary>
+            Is Exclusive pick? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.PickMode">
+            <summary>
+            Pick mode.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.MaxAllowableBans">
+            <summary>
+            Number of max allowable bans.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.BanTimerDuration">
+            <summary>
+            Duration in seconds of ban timer.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameTypeConfig.PostPickTimerDuration">
+            <summary>
+            Duration in seconds of post pick timer.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.PlayerChampionSelection">
+            <summary>
+            Class with Player champion select information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.PlayerChampionSelection.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.PlayerChampionSelection"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerChampionSelection.SummonerInternalName">
+            <summary>
+            Summoner name of the player.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerChampionSelection.SelectedSkinID">
+            <summary>
+            The skin ID that is selected by player.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerChampionSelection.Spell1ID">
+            <summary>
+            The selected summoner spell 1 (D spell).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerChampionSelection.Spell2ID">
+            <summary>
+            The ID number of the selected summoner spell 2 (F spell).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerChampionSelection.ChampionID">
+            <summary>
+            The ID number of the selected champion.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.PlayerParticipant">
+            <summary>
+            Class that defines a player participant and its infromation.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.PlayerParticipant.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.PlayerParticipant"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.AccountID">
+            <summary>
+            The account ID number of observer.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.SummonerID">
+            <summary>
+            The summoner ID number of observer.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.TimeAddedToQueue">
+            <summary>
+            The summoner ID number of observer.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.Index">
+            <summary>
+            Index of player participant (1 to 10, [Team1,p1] = 1 [team2,p1] = 6)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.QueueRating">
+            <summary>
+            Rating for queue Type
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.BotDifficulty">
+            <summary>
+            The difficulty of the bot (NONE,...)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.OriginalAccountNumber">
+            <summary>
+            The original Account ID number (probably)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.SummonerInternalName">
+            <summary>
+            Summoner name of the observer
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.SummonerName">
+            <summary>
+            Summoner name of the observer
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.Minor">
+            <summary>
+            Boolean value of "minor" (??)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.LastSelectedSkinID">
+            <summary>
+            The skin ID that was last selected by the observer (summoner).
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Game.PlayerParticipant.PartnerID">
+            <summary>
+            Partner ID (probably duo queue partner ID ??)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.ProfileIconID">
+            <summary>
+            The profile icon ID of the observer (summoner).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.TeamOwner">
+            <summary>
+            Is this player the team owner? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.Badges">
+            <summary>
+            Badges ??? unknown significance, seems to be int.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.PickTurn">
+            <summary>
+            Pickturn of observer (probably always 0).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.PickMode">
+            <summary>
+            PickMode of the game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.ClientInSynch">
+            <summary>
+            Is client in synch? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.OriginalPlatformID">
+            <summary>
+            Original platform ID (NA, EUW, EUNE,...)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerParticipant.teamParticipantID">
+            <summary>
+            The ID number of this team participant
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.GameObserver">
+            <summary>
+            Class which defines a GameObserver and its information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.GameObserver.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.GameObserver"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.AccountID">
+            <summary>
+            The account ID number of observer.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.SummonerID">
+            <summary>
+            The summoner ID number of observer.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.BotDifficulty">
+            <summary>
+            The difficulty of the bot (NONE,...)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.SummonerInternalName">
+            <summary>
+            Summoner name of the observer
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.SummonerName">
+            <summary>
+            Summoner name of the observer
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.LastSelectedSkinID">
+            <summary>
+            The skin ID that was last selected by the observer (summoner).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.ProfileIconID">
+            <summary>
+            The profile icon ID of the observer (summoner).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.Badges">
+            <summary>
+            Badges ??? unknown significance, seems to be int.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.PickTurn">
+            <summary>
+            Pickturn of observer (probably always 0).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameObserver.PickMode">
+            <summary>
+            PickMode of the game.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.PlayerCredentials">
+            <summary>
+            Class with playercredentials info to spectate a game.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.PlayerCredentials.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.PlayerCredentials"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.EncryptionKey">
+            <summary>
+            Encryption key.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.GameId">
+            <summary>
+            Game ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.ServerIP">
+            <summary>
+            Game server IP.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.Observer">
+            <summary>
+            Are there observers?
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.ObserverServerIP">
+            <summary>
+            Observer server IP.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.HandshakeToken">
+            <summary>
+            HandshakeToken ???
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.PlayerID">
+            <summary>
+            Player ID (of observer???)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.ServerPort">
+            <summary>
+            Game server port.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.ObserverServerPort">
+            <summary>
+            Observer server port.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.SummonerName">
+            <summary>
+            Summoner name (of observer???)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlayerCredentials.ObserverEncryptionKey">
+            <summary>
+            Observer encryption key.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.GameDTO">
+            <summary>
+            Class with specific information about a game (inProgress, preGame, and endGame)
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.GameDTO.#ctor(PVPNetConnect.RiotObjects.Game.GameDTO.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.GameDTO"/> class.
+            </summary>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.GameDTO.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.GameDTO"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.GameDTO.Callback">
+            <summary>
+            Delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Game.GameDTO.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.GameDTO.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.ID">
+            <summary>
+            ID of game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.Name">
+            <summary>
+            Game name.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.RoomName">
+            <summary>
+            Chat room name.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.PasswordSet">
+            <summary>
+            If there is a game password.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.SpectatorsAllowed">
+            <summary>
+            Spectators allowed setting.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.SpectatorDelay">
+            <summary>
+            Spectator delay in seconds.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.GameType">
+            <summary>
+            Type of game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.GameTypeConfigId">
+            <summary>
+            The game type config ID.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.GameState">
+            <summary>
+            Current State of game, (TEAM_SELECT, CHAMP_SELECT), etc..
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.GameMode">
+            <summary>
+            Game Mode (CLASSIC, DOMINION).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.MapId">
+            <summary>
+            ID of the map.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.MaxNumPlayers">
+            <summary>
+            Maximum number of players allowed
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.ExpiryTime">
+            <summary>
+            Expiration time of lobby.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.QueueTypeName">
+            <summary>
+            The name of the queue type
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.QueuePosition">
+            <summary>
+            Position in the queue.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.PickTurn">
+            <summary>
+            Pick turn number to pick champion.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.OwnerSummary">
+            <summary>
+            Summary of game owner/creator (PlayerParticipant).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.TeamOne">
+            <summary>
+            List of Players (PlayerParticipant) on Team One (A).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.TeamTwo">
+            <summary>
+            List of Players (PlayerParticipant) on Team Two (B).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.PlayerChampionSelections">
+            <summary>
+            List of Players and the champs they selected.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.Observers">
+            <summary>
+            List of observers.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.BanOrder">
+            <summary>
+            Ban order (team number array)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.BannedChampions">
+            <summary>
+            List of banned champions.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.OptimisticLock">
+            <summary>
+            Optimistic lock ???
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.StatusOfParticipants">
+            <summary>
+            Status of participants, 0s and 1s
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.TerminatedCondition">
+            <summary>
+            Condition if game is terminated or done.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.GameDTO.RoomPassword">
+            <summary>
+            Condition if game is terminated or done.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle">
+            <summary>
+            Class with in progress game and spectator info.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.#ctor(PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.ReconnectDelay">
+            <summary>
+            Reconnect delay.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.LastModifiedDate">
+            <summary>
+            Last date modified.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.Game">
+            <summary>
+            Game information of in progress.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.PlayerCredentials">
+            <summary>
+            The player credentials for spectating the game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.GameName">
+            <summary>
+            The name of the game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Game.PlatformGameLifecycle.ConnectivityStateEnum">
+            <summary>
+            Connectivity state enum ???
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Leagues.LeagueItem">
+            <summary>
+            Class with specific information about a league item or player entry.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Leagues.LeagueItem.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Leagues.LeagueItem"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.PreviousDayLeaguePosition">
+            <summary>
+            The league position on previous day.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.OnHotStreak">
+            <summary>
+            Is on a hot streak? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.MiniSeries">
+            <summary>
+            Mini series object, look into for more info
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.IsFreshBlood">
+            <summary>
+            Is fresh blood? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.Tier">
+            <summary>
+            League tier
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.LastPlayed">
+            <summary>
+            Last played
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.PlayerOrTeamID">
+            <summary>
+            The player or team ID number, depending on league type.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.LeaguePoints">
+            <summary>
+            The number of league points for player/team.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.IsInactive">
+            <summary>
+            Is incative? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.Rank">
+            <summary>
+            League Rank (I, II, III, etc)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.IsVeteran">
+            <summary>
+            Is Veteran? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.QueueType">
+            <summary>
+            Queue type of league.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.Losses">
+            <summary>
+            Number of losses, usually set to 0
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.PlayerOrTeamName">
+            <summary>
+            Player or team name, depending on league type.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.LeagueItem.Wins">
+            <summary>
+            Number of wins
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Leagues.League">
+            <summary>
+            Class with specific information about a league.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Leagues.League.#ctor(PVPNetConnect.RiotObjects.Leagues.League.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Leagues.League"/> class.
+            </summary>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Leagues.League.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Leagues.League"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Leagues.League.Callback">
+            <summary>
+            Delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Leagues.League.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Leagues.League.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.League.Queue">
+            <summary>
+            Queue name that this league is for.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.League.Name">
+            <summary>
+            Name of the league.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.League.Tier">
+            <summary>
+            The tier of the league.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.League.RequestorsRank">
+            <summary>
+            The league Rank of requestor (I, II, etc..)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.League.EntriesList">
+            <summary>
+            League Entries or summoners
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.League.RequestorsName">
+            <summary>
+            The summoner name of the requestor.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues">
+            <summary>
+            Class with specific information about a summoner's leagues
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.#ctor(PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues"/> class.
+            </summary>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.Callback">
+            <summary>
+            Delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Leagues.SummonerLeagues.Leagues">
+            <summary>
+            List of all leagues summoner is part of.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.AggregatedStats">
+            <summary>
+            Class that defines all the aggregated stats.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.AggregatedStats.#ctor(PVPNetConnect.RiotObjects.Statistics.AggregatedStats.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.AggregatedStats"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.AggregatedStats.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.AggregatedStats"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.AggregatedStats.Callback">
+            <summary>
+            Delegate for callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.AggregatedStats.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.AggregatedStats.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStats.LifetimeStatistics">
+            <summary>
+            The lifetime statistics that make up aggregaged stat.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStats.DateModified">
+            <summary>
+            The date that aggregated stats was modified.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStats.Key">
+            <summary>
+            The Aggregated stat key with general info
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.ChampionStatInfo">
+            <summary>
+            The class that defines the Champion Stat information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.ChampionStatInfo.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.ChampionStatInfo"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.ChampionStatInfo.TotalGamesPlayed">
+            <summary>
+            Total amount of games played with champion.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.ChampionStatInfo.AccountID">
+            <summary>
+            Account ID number of summoner.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.ChampionStatInfo.Stats">
+            <summary>
+            List of different aggregated stats with champion
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.ChampionStatInfo.ChampionID">
+            <summary>
+            The champion ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.AggregatedStat">
+            <summary>
+            Class that defines an aggregated stat and its information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.AggregatedStat.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.AggregatedStat"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStat.StatType">
+            <summary>
+            The string that defines the stat type.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStat.Count">
+            <summary>
+            Count of stat??? (usually 0)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStat.Value">
+            <summary>
+            The value of the stat.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStat.ChampionID">
+            <summary>
+            The champion ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.AggregatedStatKey">
+            <summary>
+            Class that defines an aggregated stat key.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.AggregatedStatKey.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.AggregatedStatKey"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStatKey.GameMode">
+            <summary>
+            The game mode that this aggregated stat is for.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStatKey.AccountID">
+            <summary>
+            The account ID number that this aggregated stat is for.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.AggregatedStatKey.GameModeString">
+            <summary>
+            The game mode string that this aggregated stat is for.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.TimeTrackedStat">
+            <summary>
+            The calss that defines time tracked stats.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.TimeTrackedStat.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.TimeTrackedStat"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.TimeTrackedStat.Timestamp">
+            <summary>
+            Date of the time tracked stat.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.TimeTrackedStat.Type">
+            <summary>
+            Type of the time tracked stat.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.PlayerStats">
+            <summary>
+            The class that defines player stats.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.PlayerStats.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.PlayerStats"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.PlayerStats.TimeTrackedStats">
+            <summary>
+            List of time tracked stats.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerStats.PromoGamesPlayed">
+            <summary>
+            Number of promotional games played.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerStats.PromoGamesPlayedLastUpdated">
+            <summary>
+            Date of promotional games played last updated.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.LeaverPenaltyStats">
+            <summary>
+            The class that defines leaver penalty stats.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.LeaverPenaltyStats.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.LeaverPenaltyStats"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.LeaverPenaltyStats.Level">
+            <summary>
+            The leaver level.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.LeaverPenaltyStats.LastLevelIncrease">
+            <summary>
+            Date of last level increase of leaver.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.LeaverPenaltyStats.LastDecay">
+            <summary>
+            Date of last decay of leaver.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.LeaverPenaltyStats.UserInformed">
+            <summary>
+            Was user informed? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.LeaverPenaltyStats.Points">
+            <summary>
+            Leaver points
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummary">
+            <summary>
+            The class that defines player stat summary.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummary.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummary"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummary.QueueType">
+            <summary>
+            The queue type of stat summary
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummary.ModifyDate">
+            <summary>
+            Date last modified.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummary.Leaves">
+            <summary>
+            Number of leaves from games.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummary.Wins">
+            <summary>
+            Number of wins.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummary.AccountID">
+            <summary>
+            Account ID number of stats' user
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats">
+            <summary>
+            The class that defines player lifetime stats.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.#ctor(PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.PlayerStatSummaries">
+            <summary>
+            List of all the player stat summaries (summaries of Solo_ranked, normal, etc)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.LeaverPenaltyStats">
+            <summary>
+            The leaver penalty stats.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.AccountID">
+            <summary>
+            The Account ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.DodgeStreak">
+            <summary>
+            The leaver penalty stats.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.DodgePenaltyDate">
+            <summary>
+            Dodge Penalty Date
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerLifetimeStats.PlayerStats">
+            <summary>
+            Player stats like time tracked stats.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions">
+            <summary>
+            The class that defines top played champions.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions.#ctor(PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.TopPlayedChampions.ChampionList">
+            <summary>
+            Total amount of games played with champion.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.FellowPlayerInfo">
+            <summary>
+            The class that defines the fellow player and its information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.FellowPlayerInfo.#ctor">
+            <summary>
+            Create an empty Class
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.FellowPlayerInfo.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Create the Class with a TypedObject result
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.FellowPlayerInfo.ChampionID">
+            <summary>
+            The champion ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.FellowPlayerInfo.TeamID">
+            <summary>
+            The Team ID number (100 = blue, 200 = purple).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.FellowPlayerInfo.SummonerID">
+            <summary>
+            The summoner ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.RawStat">
+            <summary>
+            The class that defines a raw stats and its information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.RawStat.#ctor">
+            <summary>
+            Create an empty Class
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.RawStat.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Create the Class with a TypedObject result
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.RawStat.StatType">
+            <summary>
+            The string that defines the stat type.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.RawStat.Value">
+            <summary>
+            The value of the stat.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats">
+            <summary>
+            The class that defines player game stats.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.ChampionName">
+            <summary>
+            Name of champion (unreliable).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.IsRanked">
+            <summary>
+            Is Ranked game? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.SkinIndex">
+            <summary>
+            ID number of champion skin used
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.FellowPlayers">
+            <summary>
+            List of players in game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.GameType">
+            <summary>
+            Type of game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.ExperienceEarned">
+            <summary>
+            XP earned from game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.IsFirstWinOfDay">
+            <summary>
+            Was eligible for First win of day? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.Difficulty">
+            <summary>
+            Difficulty (unreliable)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.GameMapID">
+            <summary>
+            ID of Map.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.IsLeaver">
+            <summary>
+            Marked as a leaver? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.SummSpellD">
+            <summary>
+            Summoner Spell 1 (1) ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.SummSpellF">
+            <summary>
+            Summoner Spell F (2) ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.GameTypeEnum">
+            <summary>
+            Game Type enum (usually same as gameType).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.TeamID">
+            <summary>
+            The team ID number (100 = Blue, 200 = Purple)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.SummonerID">
+            <summary>
+            Summoner ID number of player.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.PlayerStats">
+            <summary>
+            Player stats like kills, deaths, minions, etc...
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.IsAFK">
+            <summary>
+            Is marked as AFK? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.HistoryID">
+            <summary>
+            IS NOT GAME ID!!! Some type of ID involving the game (maybe match history ID?).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.BoostXPEarned">
+            <summary>
+            Amount of boost XP earned.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.Level">
+            <summary>
+            Summoner level after the game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.IsInvalid">
+            <summary>
+            Invalid game? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.AccountID">
+            <summary>
+            Account ID of player
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.CreateDate">
+            <summary>
+            Date/Time of game creation
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.UserServerPing">
+            <summary>
+            Average Ping of user to server
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.AdjustedRating">
+            <summary>
+            Adjusted Rating (Riot hides this value)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.PremadeSize">
+            <summary>
+            Size of premade team, 1 if not premade team.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.BoostIPEarned">
+            <summary>
+            Boost IP earned.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.GameID">
+            <summary>
+            ID number of the game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.TimeInQueue">
+            <summary>
+            Time in Queue in SECONDS.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.IPEarned">
+            <summary>
+            IP earned from game.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.EloChange">
+            <summary>
+            ELO Change (Riot hides this Value)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.GameMode">
+            <summary>
+            Game Mode: (CLASSIC, DOMINION, etc)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.DifficultyString">
+            <summary>
+            Difficulty String (unreliable)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.KCoefficient">
+            <summary>
+            Think has to do with ELO (riot hides this value)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.TeamRating">
+            <summary>
+            TEAM Rating based on ELO (riot hides this value)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.SubType">
+            <summary>
+            SubType of game (same as QueueType USUALLY)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.QueueType">
+            <summary>
+            Queue Type of game
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.IsPremadeTeam">
+            <summary>
+            Premade Team (seems to only mean full premade = 5 players)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.PredictedWinPercent">
+            <summary>
+            Predicted outcome based on elo? (Riot hides this value)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.Rating">
+            <summary>
+            ELO after game (Riot hides this value)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerGameStats.ChampionID">
+            <summary>
+            ID of champion used.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.RecentGames">
+            <summary>
+            The class that defines recent games.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.RecentGames.#ctor(PVPNetConnect.RiotObjects.Statistics.RecentGames.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.RecentGames"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.RecentGames.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.RecentGames"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.RecentGames.Callback">
+            <summary>
+            The delegate for the call back method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.RecentGames.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.RecentGames.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.RecentGames.AccountID">
+            <summary>
+            The account ID of the user whose recent games list is.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.RecentGames.GameStatsList">
+            <summary>
+            List of the recent games and their stats.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummaries">
+            <summary>
+            The class that defines player stat summaries
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummaries.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummaries"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummaries.PlayerStatSummaryList">
+            <summary>
+            The list of all player stat summaries for each queue type (ranked, normal, etc)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Statistics.PlayerStatSummaries.AccountID">
+            <summary>
+            The Acount ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SummonerNames">
+            <summary>
+            Class to handle riot return of summonerName array.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SummonerNames.#ctor(PVPNetConnect.RiotObjects.Summoner.SummonerNames.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SummonerNames"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SummonerNames.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Summoner.SummonerNames.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SummonerNames.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SummonerCatalog">
+            <summary>
+            The class that defines summoner catalog.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SummonerCatalog.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SummonerCatalog"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerCatalog.Items">
+            <summary>
+            Experience tier modification.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Summoner.SummonerCatalog.TalentTreeList">
+            <summary>
+            Talent tree list.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerCatalog.SpellBookConfig">
+            <summary>
+            Spellbook/Runebook config, with all the rune slots.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.TalentEntry">
+            <summary>
+            The class that defines a talent entry.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.TalentEntry.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.TalentEntry"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.TalentEntry.TalentID">
+            <summary>
+            Talent ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.TalentEntry.TalentRank">
+            <summary>
+            Talent rank number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.TalentEntry.Talent">
+            <summary>
+            Talent class with information about talent.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage">
+            <summary>
+            The class that defines the MasteryBookPage
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage.SummonerID">
+            <summary>
+            Summoner ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage.PageID">
+            <summary>
+            Mastery book page ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage.PageName">
+            <summary>
+            Mastery book page name.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage.CreateDate">
+            <summary>
+            Creation date of mastery book page (seems to always be NULL).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage.IsCurrent">
+            <summary>
+            Is current mastery book page? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBookPage.TalentEntriesList">
+            <summary>
+            List of all the Mastery book pages.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.PublicSummoner">
+            <summary>
+            Class with public summoner information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.#ctor(PVPNetConnect.RiotObjects.Summoner.PublicSummoner.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.PublicSummoner"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.PublicSummoner"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.InternalName">
+            <summary>
+            The name of the summoner.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.Name">
+            <summary>
+            The name of the summoner.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.AccountId">
+            <summary>
+            The account ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.ProfileIconId">
+            <summary>
+            The ID number of summoner's profile icon.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.RevisionDate">
+            <summary>
+            Date/time this information was revised.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.RevisionId">
+            <summary>
+            NOT IMPLEMENTED.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.SummonerLevel">
+            <summary>
+            The current level of the summoner.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.PublicSummoner.SummonerId">
+            <summary>
+            The summoner ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.AllSummonerData">
+            <summary>
+            The class that defines all summoner data.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.#ctor(PVPNetConnect.RiotObjects.Summoner.AllSummonerData.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.AllSummonerData"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.AllSummonerData"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            Does the callback.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.Summoner">
+            <summary>
+            The summoner information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.SummonerLevel">
+            <summary>
+            The summoner level information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.SummonerLevelAndPoints">
+            <summary>
+            Summoner level and points information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.SpellBook">
+            <summary>
+            The spellbook or rune book.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.SummonerDefaultSpells">
+            <summary>
+            The default summoner spells information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.SummonerTalentsAndPoints">
+            <summary>
+            The summoner talents and points information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllSummonerData.MasteryBook">
+            <summary>
+            The mastery book.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.MasteryBook">
+            <summary>
+            The class that defines a mastery book.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.MasteryBook.#ctor(PVPNetConnect.RiotObjects.Summoner.MasteryBook.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.MasteryBook"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.MasteryBook.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.MasteryBook"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.MasteryBook.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Summoner.MasteryBook.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.MasteryBook.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBook.SummonerID">
+            <summary>
+            Summoner ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBook.DateString">
+            <summary>
+            Believe this is date entire mastery book was created.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.MasteryBook.MasteryPagesList">
+            <summary>
+            List of all the Mastery book pages.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SummonerGameModeSpells">
+            <summary>
+            The class that defines summoner game mode spells information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SummonerGameModeSpells.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SummonerGameModeSpells"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerGameModeSpells.Spell1Id">
+            <summary>
+            Summoner spell ID in D slot.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerGameModeSpells.Spell2Id">
+            <summary>
+            Summoner spell ID in F slot.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SlotEntry">
+            <summary>
+            The class that defines a slot entry.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SlotEntry.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SlotEntry"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SlotEntry.RuneID">
+            <summary>
+            Rune ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SlotEntry.RuneSlotID">
+            <summary>
+            Rune Slot ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SlotEntry.RuneSlot">
+            <summary>
+            RuneSlot class with information about Rune Slot.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SlotEntry.Rune">
+            <summary>
+            Rune class with information about rune.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SpellBookPage">
+            <summary>
+            The class that defines the spellbook page.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SpellBookPage.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SpellBookPage"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBookPage.PageID">
+            <summary>
+            Rune page ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBookPage.PageName">
+            <summary>
+            Rune page name.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBookPage.IsCurrent">
+            <summary>
+            Is current rune page? (boolean)
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBookPage.SlotEntriesList">
+            <summary>
+            Rune page slots entries.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBookPage.CreateDate">
+            <summary>
+            Create date of rune page.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBookPage.SummonerID">
+            <summary>
+            Summoner ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SpellBook">
+            <summary>
+            The class that defines a spellbook.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SpellBook.#ctor(PVPNetConnect.RiotObjects.Summoner.SpellBook.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SpellBook"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SpellBook.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SpellBook"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SpellBook.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Summoner.SpellBook.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SpellBook.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBook.RunePagesList">
+            <summary>
+            Rune book pages list.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBook.DateString">
+            <summary>
+            Create date of rune book.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SpellBook.SummonerID">
+            <summary>
+            Summoner ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SummonerDefaultSpells">
+            <summary>
+            The class that defines summoner default spells information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SummonerDefaultSpells.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SummonerDefaultSpells"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerDefaultSpells.SummonerDefaultSpellMap">
+            <summary>
+            Dictionary object for default spells based on game mode (Game modes: CLASSIC, ARAM, ODIN, TUTORIAL).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerDefaultSpells.summonerId">
+            <summary>
+            Summoner ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SummonerLevelAndPoints">
+            <summary>
+            THe class that defines summoner level and points information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SummonerLevelAndPoints.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SummonerLevelAndPoints"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevelAndPoints.InfPoints">
+            <summary>
+            Total influence points (IP) earned in lifetime.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevelAndPoints.ExpPoints">
+            <summary>
+            Amount of experience points (default = 10 if summoner level is 30).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevelAndPoints.SummonerLevel">
+            <summary>
+            Current level of summoner.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevelAndPoints.SummonerId">
+            <summary>
+            Summoner ID number.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData">
+            <summary>
+            The class that defines all public summoner data.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.#ctor(PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData"/> class.
+            </summary>
+            <param name="callback">The callback.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.Callback">
+            <summary>
+            The delegate for the callback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.Summoner">
+            <summary>
+            The Summoner information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.SummonerLevel">
+            <summary>
+            The summoner level information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.SummonerLevelAndPoints">
+            <summary>
+            The summoner level and points information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.SpellBook">
+            <summary>
+            The spellbook or rune book.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.SummonerDefaultSpells">
+            <summary>
+            The default summoner spells information.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.AllPublicSummonerData.SummonerTalentsAndPoints">
+            <summary>
+            The summoner talents and points information.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SummonerLevel">
+            <summary>
+            The class that defines summoner level information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SummonerLevel"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.ExpTierMod">
+            <summary>
+            Experience tier modification.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.GrantRP">
+            <summary>
+            Grant RP value.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.ExpForLoss">
+            <summary>
+            Experience gained for loss.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.SummonerTier">
+            <summary>
+            The summoner tier.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.InfTierMod">
+            <summary>
+            The influence points tier mod.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.ExpToNextLevel">
+            <summary>
+            Experience needed to next level.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.ExpForWin">
+            <summary>
+            Experience gained for win.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerLevel.Level">
+            <summary>
+            The current summoner level.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.Summoner">
+            <summary>
+            Class with some basic public summoner information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.Summoner.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.Summoner"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.SeasonTwoTier">
+            <summary>
+            Highest ranked tier for season two.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.InternalName">
+            <summary>
+            The summoner name or in game name.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.AccountId">
+            <summary>
+            Account ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.SeasonOneTier">
+            <summary>
+            Highest ranked tier for season one.
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.Summoner.Summoner.Name">
+            <summary>
+            The summoner name or in game name (same as InternalName).
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.SummonerId">
+            <summary>
+            Summoner ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.ProfileIconId">
+            <summary>
+            Profile icon ID number.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.HelpFlag">
+            <summary>
+            The help flag.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.DisplayEloQuestionaire">
+            <summary>
+            THe display elo questionare boolean
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.LastGameDate">
+            <summary>
+            The last game date.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.AdvancedTutorialFlag">
+            <summary>
+            THe advanced tutorial flag.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.RevisionDate">
+            <summary>
+            THe revision date.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.RevisionId">
+            <summary>
+            The revision id.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.NameChangeFlag">
+            <summary>
+            THe name change flag.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.TutorialFlag">
+            <summary>
+            The tutorial flag.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.Summoner.SocialNetworkUserIds">
+            <summary>
+            The social network user ids.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.Summoner.SummonerTalentsAndPoints">
+            <summary>
+            The class that defines summoner talent and points information.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.Summoner.SummonerTalentsAndPoints.#ctor(PVPNetConnect.TypedObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.Summoner.SummonerTalentsAndPoints"/> class.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerTalentsAndPoints.TalentPoints">
+            <summary>
+            Number of total talent points.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerTalentsAndPoints.ModifyDate">
+            <summary>
+            Date/time since modified.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerTalentsAndPoints.CreateDate">
+            <summary>
+            Date/time when created.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.Summoner.SummonerTalentsAndPoints.SummonerId">
+            <summary>
+            Date/time since modified.
+            </summary>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.RiotGamesObject">
+            <summary>
+            RiotGamesObject is the base class for all Riot objects.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.RiotGamesObject.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            The base virtual DoCallback method.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.RiotGamesObject.SetFields``1(``0,PVPNetConnect.TypedObject)">
+            <summary>
+            Sets the fields of the object and decode/parse into correct fields.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj">The obj.</param>
+            <param name="result">The result.</param>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.InternalNameAttribute">
+            <summary>
+            The InternalName Atribute class to specify the name that Riot's server is expecting.
+            </summary>
+        </member>
+        <member name="P:PVPNetConnect.RiotObjects.InternalNameAttribute.Name">
+            <summary>
+            Gets or sets the name of the InternalName
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.InternalNameAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.InternalNameAttribute"/> class.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.UnclassedObject">
+            <summary>
+            Unclassed Riot Object
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.UnclassedObject.#ctor(PVPNetConnect.RiotObjects.UnclassedObject.Callback)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.RiotObjects.UnclassedObject"/> class.
+            </summary>
+            <param name="callback">The callback method.</param>
+        </member>
+        <member name="T:PVPNetConnect.RiotObjects.UnclassedObject.Callback">
+            <summary>
+            
+            </summary>
+            <param name="result">The TypedObject result or return packet result.</param>
+        </member>
+        <member name="F:PVPNetConnect.RiotObjects.UnclassedObject.callback">
+            <summary>
+            The callback method.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RiotObjects.UnclassedObject.DoCallback(PVPNetConnect.TypedObject)">
+            <summary>
+            Does the callback.
+            </summary>
+            <param name="result">The TypedObject result or return packet result.</param>
+        </member>
+        <member name="T:PVPNetConnect.RTMPSDecoder">
+            <summary>
+            RTMPS decoder class that decodes RTMPS messages
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RTMPSDecoder.dataBuffer">
+            <summary>
+            The data buffer
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RTMPSDecoder.dataPos">
+            <summary>
+            The data pos
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RTMPSDecoder.stringReferences">
+            <summary>
+            The string references
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RTMPSDecoder.objectReferences">
+            <summary>
+            The object references
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RTMPSDecoder.classDefinitions">
+            <summary>
+            The class definitions
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.Reset">
+            <summary>
+            Resets this instance.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.DecodeConnect(System.Byte[])">
+            <summary>
+            Decodes the connect.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+            <exception cref="T:System.Exception">
+            There is other data in the buffer!
+            or
+            Did not consume entire buffer:  + dataPos +  of  + dataBuffer.Length
+            </exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.DecodeInvoke(System.Byte[])">
+            <summary>
+            Decodes the invoke.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+            <exception cref="T:System.Exception">Did not consume entire buffer:  + dataPos +  of  + dataBuffer.Length</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.Decode(System.Byte[])">
+            <summary>
+            Decodes the specified data.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+            <exception cref="T:System.Exception">Did not consume entire buffer:  + dataPos +  of  + dataBuffer.Length</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.Decode">
+            <summary>
+            Decodes this instance.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception">
+            Undefined data type
+            or
+            Unexpected AMF3 data type:  + type
+            </exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadByte">
+            <summary>
+            Reads the byte.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadByteAsInt">
+            <summary>
+            Reads the byte as int.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadBytes(System.Int32)">
+            <summary>
+            Reads the bytes.
+            </summary>
+            <param name="length">The length.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadInt">
+            <summary>
+            Reads the int.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadDouble">
+            <summary>
+            Reads the double.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadString">
+            <summary>
+            Reads the string.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception">Error parsing AMF3 string from  + data + '\n' + e.Message</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadXML">
+            <summary>
+            Reads the XML.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException">Reading of XML is not implemented</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadDate">
+            <summary>
+            Reads the date.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadArray">
+            <summary>
+            Reads the array.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException">Associative arrays are not supported</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadList">
+            <summary>
+            Reads the list.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException">Associative arrays are not supported</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadObject">
+            <summary>
+            Reads the object.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException">Externalizable not handled for  + cd.type</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadXMLString">
+            <summary>
+            Reads the XML string.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException">Reading of XML strings is not implemented</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadByteArray">
+            <summary>
+            Reads the byte array.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadDSA">
+            <summary>
+            Reads the DSA.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadDSK">
+            <summary>
+            Reads the DSK.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadFlags">
+            <summary>
+            Reads the flags.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadRemaining(System.Int32,System.Int32)">
+            <summary>
+            Reads the remaining.
+            </summary>
+            <param name="flag">The flag.</param>
+            <param name="bits">The bits.</param>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ByteArrayToID(System.Byte[])">
+            <summary>
+            Bytes the array to ID.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.DecodeAMF0">
+            <summary>
+            Decodes the AM f0.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException">AMF0 type not supported:  + type</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadStringAMF0">
+            <summary>
+            Reads the string AM f0.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception">Error parsing AMF0 string from  + data + '\n' + e.Message</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadIntAMF0">
+            <summary>
+            Reads the int AM f0.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSDecoder.ReadObjectAMF0">
+            <summary>
+            Reads the object AM f0.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException">AMF0 type not supported:  + b</exception>
+        </member>
+        <member name="T:PVPNetConnect.RTMPSEncoder">
+            <summary>
+            The RTMPSEncoder class that encodes RTMPS packets
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.RTMPSEncoder.startTime">
+            <summary>
+            The start time
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.AddHeaders(System.Byte[])">
+            <summary>
+            Adds the headers.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.EncodeConnect(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Encodes the connect.
+            </summary>
+            <param name="paramaters">The paramaters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.EncodeInvoke(System.Int32,System.Object)">
+            <summary>
+            Encodes the invoke.
+            </summary>
+            <param name="id">The id.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.Encode(System.Object)">
+            <summary>
+            Encodes the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.Encode(System.Collections.Generic.List{System.Byte},System.Object)">
+            <summary>
+            Encodes the specified ret.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="obj">The obj.</param>
+            <exception cref="T:System.Exception">Unexpected object type:  + obj.GetType().FullName</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteInt(System.Collections.Generic.List{System.Byte},System.Int32)">
+            <summary>
+            Writes the int.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteDouble(System.Collections.Generic.List{System.Byte},System.Double)">
+            <summary>
+            Writes the double.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteString(System.Collections.Generic.List{System.Byte},System.String)">
+            <summary>
+            Writes the string.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+            <exception cref="T:System.Exception">Unable to encode string as UTF-8:  + val + '\n' + e.Message</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteDate(System.Collections.Generic.List{System.Byte},System.DateTime)">
+            <summary>
+            Writes the date.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteArray(System.Collections.Generic.List{System.Byte},System.Object[])">
+            <summary>
+            Writes the array.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteAssociativeArray(System.Collections.Generic.List{System.Byte},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Writes the associative array.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteObject(System.Collections.Generic.List{System.Byte},PVPNetConnect.TypedObject)">
+            <summary>
+            Writes the object.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteByteArray(System.Collections.Generic.List{System.Byte},System.Byte[])">
+            <summary>
+            Writes the byte array.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+            <exception cref="T:System.NotImplementedException">Encoding byte arrays is not implemented</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteIntAMF0(System.Collections.Generic.List{System.Byte},System.Int32)">
+            <summary>
+            Writes the int AM f0.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.WriteStringAMF0(System.Collections.Generic.List{System.Byte},System.String)">
+            <summary>
+            Writes the string AM f0.
+            </summary>
+            <param name="ret">The ret.</param>
+            <param name="val">The val.</param>
+            <exception cref="T:System.Exception">Unable to encode string as UTF-8:  + val + '\n' + e.Message</exception>
+        </member>
+        <member name="M:PVPNetConnect.RTMPSEncoder.RandomUID">
+            <summary>
+            Randoms the UID.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PVPNetConnect.TypedObject">
+            <summary>
+            The class that defines a TypedObject and packet object
+            </summary>
+        </member>
+        <member name="F:PVPNetConnect.TypedObject.type">
+            <summary>
+            The type
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.TypedObject"/> class.
+            </summary>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PVPNetConnect.TypedObject"/> class.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.MakeArrayCollection(System.Object[])">
+            <summary>
+            Makes the array collection.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.GetTO(System.String)">
+            <summary>
+            Gets the TO.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.GetString(System.String)">
+            <summary>
+            Gets the string.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.GetInt(System.String)">
+            <summary>
+            Gets the int.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.GetDouble(System.String)">
+            <summary>
+            Gets the double.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.GetBool(System.String)">
+            <summary>
+            Gets the bool.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.GetArray(System.String)">
+            <summary>
+            Gets the array.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PVPNetConnect.TypedObject.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+    </members>
+</doc>
